@@ -1,6 +1,6 @@
 {
   "name": "customer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
@@ -15,33 +15,66 @@
   "dependencies": {
     "@angular/common": "~8.1.2",
     "@angular/core": "~8.1.2",
+    "@angular/fire": "^5.2.3",
     "@angular/forms": "~8.1.2",
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "@capacitor/core": "1.4.0",
+    "@ionic-native/camera": "^5.19.0",
+    "@ionic-native/camera-preview": "^4.20.0",
     "@ionic-native/core": "^5.0.0",
+    "@ionic-native/file": "^5.19.0",
+    "@ionic-native/file-path": "^5.19.0",
+    "@ionic-native/file-transfer": "^5.19.0",
+    "@ionic-native/geolocation": "^5.19.0",
+    "@ionic-native/google-plus": "^4.20.0",
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
+    "@ionic-native/transfer": "^3.14.0",
     "@ionic/angular": "^4.7.1",
+    "@ionic/storage": "^2.2.0",
+    "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-camera": "^4.1.0",
+    "cordova-plugin-camera-preview": "^0.11.1",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-file-transfer": "^1.7.1",
+    "cordova-plugin-geolocation": "^4.0.2",
+    "cordova-plugin-googleplus": "^8.2.1",
     "core-js": "^2.5.4",
+    "firebase": "^7.6.1",
+    "firebaseui": "^4.4.0",
+    "firebaseui-angular": "^4.0.1",
+    "font-awesome": "4.7.0",
     "rxjs": "~6.5.1",
+    "rxjs-compat": "^6.5.4",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.801.2",
-    "@angular-devkit/build-angular": "~0.801.2",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular-devkit/core": "~8.1.2",
     "@angular-devkit/schematics": "~8.1.2",
     "@angular/cli": "~8.1.2",
     "@angular/compiler": "~8.1.2",
     "@angular/compiler-cli": "~8.1.2",
     "@angular/language-service": "~8.1.2",
+    "@capacitor/cli": "1.4.0",
     "@ionic/angular-toolkit": "^2.1.1",
+    "@ionic/cli-plugin-cordova": "^1.6.2",
+    "@ionic/cli-plugin-ionic-angular": "^1.4.1",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.1.3",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -54,5 +87,30 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "374993376699-plu7aopnetkutv520i9bo1cmqicm28kd.apps.googleusercontent.com",
+        "WEB_APPLICATION_CLIENT_ID": "374993376699-plu7aopnetkutv520i9bo1cmqicm28kd.apps.googleusercontent.com"
+      },
+      "cordova-plugin-camera-preview": {
+        "ANDROID_SUPPORT_LIBRARY_VERSION": "26+"
+      },
+      "cordova-plugin-camera": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-file-transfer": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
 }

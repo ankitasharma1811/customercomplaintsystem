@@ -1,0 +1,15 @@
+<ion-content class="background">
+    <ion-button (click)="locateme()">Get Location</ion-button>
+    <h1>{{loc}}</h1>
+    <ion-list>
+        <ion-list-header>Select Category</ion-list-header>
+        <ion-item>
+          <ion-label>Department</ion-label>
+          <ion-select value="first" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="first">Noida Police</ion-select-option>
+          </ion-select>
+        </ion-item>
+    </ion-list>
+    <ion-input placeholder="Enter Input"></ion-input>
+    <ion-button class="actionbutton" expand="full" style="text-transform: none; color: white;"><b>Sign Up</b></ion-button>
+</ion-content>

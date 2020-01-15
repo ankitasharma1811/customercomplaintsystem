@@ -1,5 +1,9 @@
 {
   "name": "customer",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "6131d34b"
 }
